@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List - Sorting and Filtering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Product List</h1>
+
+    <input type="text" id="searchInput" placeholder="Search for products..." oninput="filterProducts(x)">
+
+    <table id="productsTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Product ID</th>
+                <th onclick="sortTable(1)">Product Name</th>
+                <th onclick="sortTable(2)">Price</th>
+            </tr>
+        </thead>
+        <tbody id="productsBody">
+            <!-- Products will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
